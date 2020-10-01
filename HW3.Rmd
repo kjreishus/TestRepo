@@ -16,6 +16,7 @@ library(tidyverse)
 ```
 ```{r, load-data}
 #load and clean data
+# a nice change
 projectdata<-read.csv("/Users/katelinreishus/Documents/INFO550/Georgia_COVID-19_Case_Data.csv",na.strings=c("", "NA"))
 hw3<- projectdata %>%
   mutate(DATESTAMP=as.Date(DATESTAMP))
